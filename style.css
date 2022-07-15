@@ -81,6 +81,7 @@ p{
 /* Sidebar */
 
 .app {
+  /* without display flex the mobile view is okay but the desktop view is not ok */
     display: flex;
     min-height: 100vh;
 }
@@ -222,6 +223,7 @@ nav .fa{
       cursor: pointer;
   }
 
+
 }
 
 
@@ -283,6 +285,16 @@ nav .fa{
     .topnav input[type=text] {
       border: 1px solid #ccc;  
     }
+
+    .app {
+      /* without display flex the mobile view is okay but the desktop view is not ok, we used flex-direction to arrange the mobile view*/
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+  
+
   }
 
   /* icons */
